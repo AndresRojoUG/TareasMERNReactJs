@@ -1,0 +1,148 @@
+
+body{
+    margin: 0;
+    
+}
+.image-container1 {
+    position: absolute;
+    top: 100px; /* Cambia la posición vertical según tus necesidades */
+    left: 10%; /* Cambia la posición horizontal según tus necesidades */
+    transform: translateX(-50%); /* Centra horizontalmente el elemento */
+    animation: rotate 3s infinite linear; 
+  }
+  .image-container2 {
+    position: absolute;
+    top: 100px; /* Cambia la posición vertical según tus necesidades */
+    right: 10%; /* Cambia la posición horizontal según tus necesidades */
+    transform: translateX(-50%); /* Centra horizontalmente el elemento */
+    animation: rotate 3s infinite linear; 
+  }
+  .image-container3 {
+    position: absolute;
+    bottom: 45px; /* Cambia la posición vertical según tus necesidades */
+    left: 10%; /* Cambia la posición horizontal según tus necesidades */
+    transform: translateX(-50%); /* Centra horizontalmente el elemento */
+    animation: rotate 3s infinite linear; 
+  }
+  .image-container4 {
+    position: absolute;
+    bottom: 45px; /* Cambia la posición vertical según tus necesidades */
+    right: 10%; /* Cambia la posición horizontal según tus necesidades */
+    transform: translateX(-50%); /* Centra horizontalmente el elemento */
+    animation: rotate 3s infinite linear; 
+  }
+
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg); /* Rota 360 grados (una vuelta completa) */
+    }
+  }
+nav{
+    background-color: #c6ac8f !important;
+    margin-bottom: 3rem;
+    position: sticky !important;
+    top: 0px;
+    z-index: 100;
+  
+}
+#root{
+width: 100%;
+height:100vh;
+overflow: auto;
+   background-color: #22333b;
+}
+
+.pageTasks{
+    
+ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+ 
+    gap: 5rem;
+    margin-bottom: 3rem;
+}
+
+.textopage {
+    text-align: center;
+    margin-bottom: 3rem; position: sticky;
+    
+  
+}
+
+.card-header{
+    display: flex;
+    justify-content: space-between ;
+    background:#c6ac8f !important;
+}
+.card-header button:hover{
+transform: scale(1.4);
+}
+.cuerpoTarjeta{
+    background-color: #5e503f;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow:hidden;
+    gap: 1rem;
+   
+  
+}
+
+.card-title,.textopage ,.card-text,span{
+    color:#eae0d5 !important;
+}
+
+.botonesCard{
+    display:flex;
+    width: 100%;
+    justify-content:space-between;
+    
+}
+.tarjetaForm i{
+animation: salto 3s infinite  ease;
+}
+
+@keyframes salto {
+  from {
+    transform: translatey(2rem);
+  }
+  to {
+    transform: translatey(0); /* Rota 360 grados (una vuelta completa) */
+  }
+}
+.tarjetaForm{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 10%;
+  background-color: #5e503f;
+  color: #eae0d5;
+}
+.contenedor-form{
+ 
+  display: flex;
+  justify-content: center;
+
+}
+Form{
+  display: flex;
+  flex-direction: column;
+
+}
+@media (min-width: 590px) {
+    .pageTasks{
+  
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5rem;
+    }
+    
+  }
